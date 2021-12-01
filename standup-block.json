@@ -1,0 +1,64 @@
+{
+	"title": {
+		"type": "plain_text",
+		"text": "Standup Qs"
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Submit"
+	},
+	"blocks": [
+		{
+			"type": "input",
+            "block_id": "yesterday_input",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "ml_input",
+				"multiline": true,
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Awesome work you completed"
+				}
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Yesterday"
+			}
+		},
+		{
+			"type": "input",
+            "block_id": "today_input",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "ml_input",
+				"multiline": true,
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Awesome things you're going to do"
+				}
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Today"
+			}
+		},
+		{
+			"type": "input",
+            "block_id": "blocker_input",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "ml_input",
+				"multiline": true,
+				"placeholder": {
+					"type": "plain_text",
+					"text": "What not so awesome this is in your way"
+				}
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Blockers"
+			}
+		}
+	],
+	"type": "modal"
+}
