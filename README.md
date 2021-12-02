@@ -1,0 +1,1 @@
+When starting up the application make sure you update the redirect URL [Here](https://api.slack.com/apps/A02N3EHSZT9/oauth?)

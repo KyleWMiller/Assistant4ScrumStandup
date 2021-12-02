@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon app.js",
-    "ngrok": "ngrok http -host-header=rewrite localhost:3000",
+    "ngrok": "ngrok http -host-header=rewrite localhost:3000", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
