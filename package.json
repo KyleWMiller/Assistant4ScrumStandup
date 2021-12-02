@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon app.js",
+    "ngrok": "ngrok http -host-header=rewrite localhost:3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@slack/bolt": "^3.8.1"
+    "@slack/bolt": "^3.8.1",
+    "@slack/rtm-api": "^6.0.0",
+    "@slack/socket-mode": "^1.2.0",
+    "@slack/web-api": "^6.5.1"
   },
   "devDependencies": {
     "dotenv": "^10.0.0",

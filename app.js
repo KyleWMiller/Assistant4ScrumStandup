@@ -2,13 +2,14 @@ const { App } = require("@slack/bolt");
 const fs = require('fs')
 require("dotenv").config();
 
+// this was v1 of the slack bot using @slack/bolt but we are going with the direct NodeSDK
 
 // Initializes your app with your bot token and signing secret
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
   signingSecret: process.env.SLACK_SIGNING_SECRET,
   socketMode: true,
-  appToken: process.env.APP_TOKEN,
+  appToken: process.env.SLACK_APP_TOKEN,
 });
 
 // Using an obj for our DB (for now? possibly forever???)
@@ -39,9 +40,9 @@ app.command("/standup", async ({ payload, context, client, ack, respond, body })
       console.log('=========================')
       console.log('result', result.view.state)
       console.log('=========================')
-    //   let acknowledgement = await ack()
+      await ack()
     //   console.log('ack', acknowledgement)
-      let res = await respond()
+      // let res = await respond()
       console.log()
     } catch (error) {
         console.log("err")
